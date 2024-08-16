@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WeatherHomeComponent } from './modules/weather/page/weather-home/weather-home.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  declarations: [AppComponent],
+  imports: [RouterModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
