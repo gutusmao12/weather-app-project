@@ -21,7 +21,7 @@ export interface WeatherDatas {
     temp_min: number,
     temp_max: number,
     pressure: number,
-    humity: number,
+    humidity: number,
   },
 
   visibility: number,
